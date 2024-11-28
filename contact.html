@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Katerina Petrenka | Contact</title>
+    <link rel="stylesheet" href="contact.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="header">
+        <nav class="navbar">
+            <div class="logo">Katerina<span class="highlight">Petrenka</span></div>
+            <div class="hamburger">☰</div>
+            <ul class="nav-links">
+                <li><a href="index.html" class="active">Home</a></li>
+                <li><a href="skills.html">Skills</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="pricing.html">Pricing</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="hero">
+        <div class="hero-content">
+            <h1>Contact Me</h1>
+            <p>Let’s bring your ideas to life! Reach out, and I’ll be in touch.</p>
+        </div>
+    </section>
+
+    <section id="contact" class="contact-section">
+        <h2>Let’s Connect</h2>
+        <p>If you have any questions or need my expertise, please fill out the form below. I'll respond promptly.</p>
+        <div class="contact-container">
+            <form id="contact-form">
+                <div class="form-group">
+                    <label for="name">Name</label>
+                    <input type="text" id="name" name="name" required aria-label="Your Name">
+                </div>
+                <div class="form-group">
+                    <label for="surname">Surname</label>
+                    <input type="text" id="surname" name="surname" required aria-label="Your Surname">
+                </div>
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" required aria-label="Your Email">
+                </div>
+                <div class="form-group">
+                    <label for="phone">Phone</label>
+                    <input type="tel" id="phone" name="phone" required aria-label="Your Phone Number">
+                </div>
+                <div class="form-group">
+                    <label for="company-size">My company size is</label>
+                    <select id="company-size" name="company-size">
+                        <option value="startup">A Startup</option>
+                        <option value="middle-company">A Middle Company</option>
+                        <option value="corporate">A Corporate</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="company-area">My company area is</label>
+                    <select id="company-area" name="company-area">
+                        <option value="finance">In Finance</option>
+                        <option value="manufacturing">Manufacturing</option>
+                        <option value="technology">In Technology</option>
+                        <option value="marketing">In Marketing</option>
+                        <option value="service">In Service</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="message">Message</label>
+                    <textarea id="message" name="message" rows="5" aria-label="Your Message"></textarea>
+                </div>
+                <button type="submit" class="submit-button">Submit</button>
+            </form>
+
+            <div class="contact-info">
+                <h3>Direct Contact</h3>
+                <p>Email: <a href="mailto:katerina@example.com">katerina@example.com</a></p>
+                <p>Phone: <a href="tel:+123456789">+123 456 789</a></p>
+                <p>LinkedIn: <a href="https://www.linkedin.com/in/katerinapetrenka" target="_blank">linkedin.com/in/katerinapetrenka</a></p>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <p>© 2024 Katerina Petrenka. All Rights Reserved.</p>
+    </footer>
+
+    <script src="contact.js"></script>
+</body>
+</html>

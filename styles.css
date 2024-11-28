@@ -1,0 +1,186 @@
+/* General Styles */
+body {
+    font-family: 'Montserrat', sans-serif;
+    margin: 0;
+    background: linear-gradient(120deg, #4B0082, #E6E6FA);
+    color: #fff;
+}
+
+/* Header */
+.header {
+    background: rgba(0, 0, 0, 0.8);
+    padding: 1rem 0;
+    position: fixed;
+    width: 100%;
+    z-index: 10;
+}
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 90%;
+    margin: auto;
+}
+.logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+.logo .highlight {
+    color: #C0C0C0;
+}
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 2rem;
+}
+.nav-links a {
+    color: #fff;
+    text-decoration: none;
+}
+
+/* Adjust Navigation for Mobile */
+@media (max-width: 768px) {
+    .nav-links {
+        flex-direction: column;
+        background: rgba(0, 0, 0, 0.9);
+        position: fixed;
+        top: 60px;
+        right: 0;
+        width: 50%;
+        max-width: 300px;
+        height: 100vh;
+        display: none;
+        gap: 1.5rem;
+        padding: 2rem;
+    }
+    .nav-links.show {
+        display: flex;
+    }
+    .hamburger {
+        display: block;
+        font-size: 2rem;
+        cursor: pointer;
+        color: white;
+    }
+}
+
+/* Hero Section */
+.hero {
+    background-image: url('/img/close-up-image-programer-working-his-desk-office.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 0 2rem;
+}
+
+.hero h1 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+}
+.hero p {
+    font-size: 1rem;
+    color: #C0C0C0;
+}
+.cta-button {
+    font-size: 1.2rem;
+    padding: 0.8rem 2rem;
+    margin-top: 1rem;
+}
+
+@media (max-width: 768px) {
+    .hero h1 {
+        font-size: 1.8rem;
+    }
+    .hero p {
+        font-size: 1rem;
+    }
+}
+
+/* About Section */
+.about-section {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    align-items: center;
+    justify-content: space-between;
+    padding: 4rem 2rem;
+    background: #E6E6FA;
+    color: #4B0082;
+}
+.about-image {
+    flex: 1 1 40%;
+    width: 100%;
+    max-width: 300px;
+    border-radius: 10px;
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.3);
+}
+.about-text {
+    flex: 1 1 50%;
+}
+.about-text h2 {
+    font-size: 2rem;
+}
+.about-text p {
+    font-size: 1rem;
+}
+
+@media (max-width: 768px) {
+    .about-section {
+        flex-direction: column;
+        text-align: center;
+    }
+    .about-text {
+        order: -1;
+    }
+}
+
+/* Services Section */
+.services-section {
+    padding: 4rem 2rem;
+    text-align: center;
+    background: #4B0082;
+    color: #fff;
+}
+.services-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 2rem;
+}
+
+@media (max-width: 768px) {
+    .services-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* Testimonials Section */
+.testimonials-section {
+    padding: 4rem 2rem;
+    text-align: center;
+    background: #C0C0C0;
+    color: #4B0082;
+}
+.testimonials-section h2 {
+    font-size: 2.5rem;
+}
+.testimonial {
+    font-style: italic;
+}
+
+/* Footer */
+.footer {
+    text-align: center;
+    padding: 2rem 0;
+    background: #4B0082;
+    color: #C0C0C0;
+}
+
+/* Smooth Scroll Offset Fix */
+html {
+    scroll-behavior: smooth;
+}
